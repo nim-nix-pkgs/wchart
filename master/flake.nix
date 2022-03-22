@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-wChart-master.flake = false;
+  inputs.src-wChart-master.ref   = "refs/heads/master";
   inputs.src-wChart-master.owner = "bunkford";
-  inputs.src-wChart-master.ref   = "master";
   inputs.src-wChart-master.repo  = "wChart";
   inputs.src-wChart-master.type  = "github";
   
