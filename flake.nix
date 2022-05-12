@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."wchart-master".dir   = "master";
+  inputs."wchart-master".owner = "nim-nix-pkgs";
+  inputs."wchart-master".ref   = "master";
+  inputs."wchart-master".repo  = "wchart";
+  inputs."wchart-master".type  = "github";
+  inputs."wchart-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."wchart-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;
